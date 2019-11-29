@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Lewis Gatsby Starter i18n`,
     description: `A custom Gatsby starter template to start a multilanguage website.`,
-    siteUrl: `https://www.lewis-gatsby-starter-i18n.firebaseapp.com`,
+    siteUrl: `https://lewis-gatsby-starter-i18n.netlify.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
