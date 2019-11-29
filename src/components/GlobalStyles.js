@@ -82,6 +82,8 @@ export const GlobalStyles = createGlobalStyle`
     min-height: 100vh;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
   }
 
   /* Remove list styles on ul, ol elements with a class attribute */
