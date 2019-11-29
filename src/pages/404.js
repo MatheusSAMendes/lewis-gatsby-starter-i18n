@@ -1,19 +1,19 @@
 import React from 'react';
 import { injectIntl, Link } from 'gatsby-plugin-intl';
 
-import { Button, HeadingXL, Layout, SEO, TextBody } from '../components';
+import { Button, Heading, Layout, SEO, Text } from '../components';
 
 const NotFoundPage = ({ intl }) => {
   return (
     <Layout>
       <SEO title={intl.formatMessage({ id: 'notfound_title' })} />
-      <HeadingXL>{intl.formatMessage({ id: 'notfound_title' })}</HeadingXL>
-      <TextBody>
+      <Heading>{intl.formatMessage({ id: 'notfound_title' })}</Heading>
+      <Text>
         {intl.formatMessage({ id: 'notfound_text' })}{' '}
         <span role="img" aria-label="duh">
           😓
         </span>
-      </TextBody>
+      </Text>
       <Link to="/">
         <Button>{intl.formatMessage({ id: 'notfound_button' })}</Button>
       </Link>

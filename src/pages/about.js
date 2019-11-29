@@ -2,20 +2,20 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { injectIntl, Link } from 'gatsby-plugin-intl';
 
-import { Button, HeadingXL, Image, Layout, SEO, TextBody } from '../components';
+import { Button, Heading, Image, Layout, SEO, Text } from '../components';
 
 const About = ({ intl, data }) => {
   return (
     <Layout>
       <SEO title={intl.formatMessage({ id: 'about_title' })} />
-      <HeadingXL>{intl.formatMessage({ id: 'about_title' })}</HeadingXL>
+      <Heading>{intl.formatMessage({ id: 'about_title' })}</Heading>
       <Image fluid={data.image1.childImageSharp.fluid} alt="image1" />
-      <TextBody>
+      <Text>
         {intl.formatMessage({ id: 'about_text1' })}
         <br />
         <br />
         {intl.formatMessage({ id: 'about_text2' })}
-      </TextBody>
+      </Text>
       <Link to="/">
         <Button>{intl.formatMessage({ id: 'contact_button' })}</Button>
       </Link>

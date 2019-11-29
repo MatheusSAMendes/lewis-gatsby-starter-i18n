@@ -1,23 +1,10 @@
-import Button from './Button';
-import Footer from './Footer';
-import GlobalStyles from './GlobalStyles';
-import Header from './Header';
-import HeadingXL from './HeadingXL';
-import Image from './Image';
-import Layout from './Layout';
-import Nav from './Nav';
-import SEO from './SEO';
-import TextBody from './TextBody';
-
-export {
-  Button,
-  Footer,
-  GlobalStyles,
-  Header,
-  HeadingXL,
-  Image,
-  Layout,
-  Nav,
-  SEO,
-  TextBody,
-};
+export { Button } from './Button';
+export { Footer } from './Footer';
+export { GlobalStyles } from './GlobalStyles';
+export { Header } from './Header';
+export { Heading } from './Heading';
+export { Image } from './Image';
+export { Layout } from './Layout';
+export { Nav } from './Nav';
+export { SEO } from './SEO';
+export { Text } from './Text';

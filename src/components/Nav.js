@@ -7,7 +7,6 @@ const NavIcon = styled.label`
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 33px;
   padding: 10px;
   transform: rotate(0deg);
@@ -93,7 +92,6 @@ const NavModal = styled.nav`
     top: 100%;
     left: 0;
     right: 0;
-
     background-color: var(--light-color-translucent);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
@@ -122,7 +120,7 @@ const NavLinkActive = {
   textDecoration: 'underline',
 };
 
-const Nav = ({ intl }) => {
+export const Nav = injectIntl(({ intl }) => {
   return (
     <>
       <Input type="checkbox" id="menu" />
@@ -142,6 +140,4 @@ const Nav = ({ intl }) => {
       </NavModal>
     </>
   );
-};
-
-export default injectIntl(Nav);
+});

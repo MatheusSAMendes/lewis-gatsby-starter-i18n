@@ -1,12 +1,10 @@
 {
   "name": "lewis-gatsby-starter-i18n",
   "description": "A custom Gatsby starter template to start a multilanguage website.",
+  "author": "@lewislbr",
   "repository": {
     "type": "git",
     "url": "https://github.com/lewislbr/lewis-gatsby-starter-i18n"
-  },
-  "bugs": {
-    "url": "https://github.com/lewislbr/lewis-gatsby-starter-i18n/issues"
   },
   "version": "0.1.0",
   "license": "MIT",
@@ -33,15 +31,10 @@
   "devDependencies": {
     "prettier": "^1.19.1"
   },
-  "keywords": [
-    "gatsby"
-  ],
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "serve": "gatsby serve"
   }
 }

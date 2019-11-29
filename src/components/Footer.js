@@ -3,18 +3,18 @@ import styled from 'styled-components';
 import { injectIntl } from 'gatsby-plugin-intl';
 
 const Container = styled.footer`
-  padding-top: 5vh;
-  padding-bottom: 3vh;
+  padding: 5vh var(--sides-padding-desktop) 3vh var(--sides-padding-desktop);
   margin-top: 20vh;
   text-align: left;
   font-size: 17px;
 
   @media (max-width: 849px) {
     font-size: 16px;
+    padding: 5vh var(--sides-padding-mobile) 3vh var(--sides-padding-mobile);
   }
 `;
 
-const Footer = ({ intl }) => {
+export const Footer = injectIntl(({ intl }) => {
   return (
     <Container>
       <p>
@@ -22,6 +22,4 @@ const Footer = ({ intl }) => {
       </p>
     </Container>
   );
-};
-
-export default injectIntl(Footer);
+});

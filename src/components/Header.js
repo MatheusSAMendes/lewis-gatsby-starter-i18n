@@ -35,15 +35,13 @@ const Logo = styled.p`
   }
 `;
 
-const Header = ({ intl }) => {
+export const Header = injectIntl(({ intl }) => {
   return (
     <Bar>
       <Logo>
-        <Link to="/">{intl.formatMessage({ id: 'logo' })}</Link>
+        <Link to="/">LGSi18n</Link>
       </Logo>
       <Nav />
     </Bar>
   );
-};
-
-export default injectIntl(Header);
+});

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export default styled.h1`
+export const Heading = styled.h1`
   display: block;
   margin: 0 auto 10vh auto;
   font-size: 80px;
