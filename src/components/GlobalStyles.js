@@ -30,6 +30,11 @@ export const GlobalStyles = createGlobalStyle`
     font-display: block;
   }
 
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
   body {
     padding-top: 20vh;
     background-color: var(--light-color);

@@ -98,7 +98,7 @@ const NavModal = styled.nav`
   }
 `;
 
-const NavLink = styled.div`
+const NavLink = styled(Link)`
   display: block;
   padding-left: 21vw;
   font-size: 55px;
@@ -131,12 +131,12 @@ export const Nav = injectIntl(({ intl }) => {
         <NavIconLine4 />
       </NavIcon>
       <NavModal id="nav">
-        <Link to="/" activeStyle={NavLinkActive}>
-          <NavLink>{intl.formatMessage({ id: 'nav_link1' })}</NavLink>
-        </Link>
-        <Link to="/about" activeStyle={NavLinkActive}>
-          <NavLink>{intl.formatMessage({ id: 'nav_link2' })}</NavLink>
-        </Link>
+        <NavLink to="/" activeStyle={NavLinkActive}>
+          {intl.formatMessage({ id: 'nav_link1' })}
+        </NavLink>
+        <NavLink to="/about" activeStyle={NavLinkActive}>
+          {intl.formatMessage({ id: 'nav_link2' })}
+        </NavLink>
       </NavModal>
     </>
   );

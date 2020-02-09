@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Footer, GlobalStyles, Header } from '../components';
+import { Footer, GlobalStyles, Header } from '.';
 
 const Content = styled.div`
   padding: 0 var(--sides-padding-desktop);

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { injectIntl, Link } from 'gatsby-plugin-intl';
 
-import { Nav } from '../components';
+import { Nav } from '.';
 
 const Bar = styled.header`
   display: flex;
@@ -26,7 +26,7 @@ const Bar = styled.header`
   }
 `;
 
-const Logo = styled.p`
+const Logo = styled(Link)`
   font-size: 32px;
   font-weight: 700;
 
@@ -35,12 +35,10 @@ const Logo = styled.p`
   }
 `;
 
-export const Header = injectIntl(({ intl }) => {
+export const Header = injectIntl(() => {
   return (
     <Bar>
-      <Logo>
-        <Link to="/">LGSi18n</Link>
-      </Logo>
+      <Logo to="/">LGSi18n</Logo>
       <Nav />
     </Bar>
   );
